@@ -19,7 +19,7 @@ export default class Task2 extends Component {
               {this.state.data.map((data, index) => {
                 return (
                   <div key={index} className="col-lg-3 col-sm-4 col-xs-6">
-                    <div className="video"><iframe src={data.url} frameborder="0" allowfullscreen></iframe></div>
+                    <div className="video"><iframe title={data.title} src={data.url} frameborder="0" allowfullscreen></iframe></div>
                     <h5 className="text-center title-video">{data.title}</h5>
                   </div>
                 )
